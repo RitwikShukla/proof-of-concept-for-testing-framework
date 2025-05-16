@@ -2,9 +2,9 @@ package uistore;
 
 import org.openqa.selenium.By;
 
-public class locaters {
+public class Locaters {
 
-    private By searchBox = By.xpath("//input[@id='search']");
+    private By searchBox = By.xpath("(//input)[1]");
     private By searchButton = By.xpath("//button[@id='search-icon-legacy']");
     private By firstVideo = By.xpath("(//a[@id='video-title'])[1]");
     private By videoQualityButton = By.xpath("//button[@class='ytp-button ytp-settings-button']");

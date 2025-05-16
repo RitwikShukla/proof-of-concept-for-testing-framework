@@ -36,11 +36,10 @@ public class Base {
     }
 
     public void openBrowser() {
-
         try {
             loadProperties();
         } catch (IOException e) {
-            // TODO Auto-generated catch block
+            System.out.println("Properties file not found");
             e.printStackTrace();
         }
         String executionType = prop.getProperty("executiontype");

@@ -2,17 +2,22 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import pages.HomePage;
+
 
 public class lunch {
 
+    HomePage homePage;
+
     @Given("I lunch youtube on website")
     public void i_lunch_youtube_on_website() {
-        
+        homePage = new HomePage(Hooks.reporter);
     }
 
     @Then("i search for {string}")
     public void i_search_for(String string) {
-
+        homePage.enterSearchText(string);
+        
     }
 
     @Then("I click on the first video")

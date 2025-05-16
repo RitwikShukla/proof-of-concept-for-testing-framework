@@ -1,6 +1,6 @@
-Feature: Lunch youtube app
+Feature: Launch youtube app
 
-    Scenario: Lunch youtube app
+    Scenario: Launch youtube app
         Given I lunch youtube on website
         Then i search for "selenium"
         And I click on the first video
