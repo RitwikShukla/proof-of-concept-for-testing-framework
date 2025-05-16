@@ -45,6 +45,8 @@ public class Base {
         }
         String executionType = prop.getProperty("executiontype");
         String browserName = prop.getProperty("browser");
+        System.out.println("Execution Type: " + executionType);
+        System.out.println("Browser Name: " + browserName);
 
         if ("remote".equalsIgnoreCase(executionType)) {
             URL gridUrl;
@@ -75,7 +77,7 @@ public class Base {
                     break;
             }
         } else {
-            System.err.println("Invalid execution type: " + executionType);
+            System.err.println("Invalid execution type: " + executionType + browserName);
         }
 
         if (driver != null)
