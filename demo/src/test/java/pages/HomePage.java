@@ -18,6 +18,25 @@ public class HomePage {
 
     public void enterSearchText (String searchText) {
        webDriverHelper.sendKeysToElement(locaters.getSearchBox(), searchText);
+       webDriverHelper.pressEnter(locaters.getSearchBox());
+    }
+    public void clickFirstResult() {
+        webDriverHelper.clickElement(locaters.getContent());
+    }
+    public void clickPauseButton() {
+        webDriverHelper.clickElement(locaters.getPauseButton());
+    }
+    public void clickSubtitlesButton() {
+        webDriverHelper.clickElement(locaters.getSubtitlesButton());
+    }
+    public void clickSettingsButton() {
+        webDriverHelper.clickElement(locaters.getSettingsButton());
+    }
+    public void clickQualityButton() {
+        webDriverHelper.clickElement(locaters.getQualityButton());
+    }
+    public void clickQuality1080p() {
+        webDriverHelper.clickElement(locaters.getQuality1080p());
     }
 
 }
